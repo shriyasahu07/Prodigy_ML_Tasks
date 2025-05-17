@@ -1,3 +1,5 @@
+Description:
+
 1. Import Libraries
 We begin by importing essential Python libraries:
 pandas and numpy for data manipulation and numerical operations.
@@ -37,7 +39,7 @@ Mean Absolute Error (MAE): Average magnitude of prediction errors.
 Mean Squared Error (MSE): Average squared errors, penalizing larger errors.
 Root Mean Squared Error (RMSE): Square root of MSE, in same units as target variable.
 
-Summary
+Summary:
 This structured approach—from data exploration to model evaluation—helps ensure that the house price prediction is both accurate and interpretable.
 The insights gained from EDA and model coefficients guide improvements and feature engineering for future iterations.
 
