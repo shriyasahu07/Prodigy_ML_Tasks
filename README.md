@@ -36,9 +36,41 @@ Calculated key metrics to quantify model performance:
 Mean Absolute Error (MAE): Average magnitude of prediction errors.
 Mean Squared Error (MSE): Average squared errors, penalizing larger errors.
 Root Mean Squared Error (RMSE): Square root of MSE, in same units as target variable.
+
 Summary
 This structured approach—from data exploration to model evaluation—helps ensure that the house price prediction is both accurate and interpretable.
 The insights gained from EDA and model coefficients guide improvements and feature engineering for future iterations.
+
+Project Structure:
+
+House Price Prediction Dataset.csv:
+The dataset used to train and test the model. Contains columns like area, number of rooms, bedrooms, and price.
+
+Linear_Regression_Model.ipynb:
+A complete notebook containing:
+Data loading and cleaning
+Exploratory Data Analysis (EDA)
+Feature engineering
+Model training and evaluation
+Visualizations
+
+Linear_Regression_Model.pkl:
+The trained Linear Regression model saved using pickle. It is used by app.py to make real-time predictions.
+
+app.py:
+The main Flask application file that:
+Loads the pickled model
+Renders the HTML form
+Accepts user input
+Predicts house price
+Returns the result to the frontend
+
+index.html:
+A styled HTML form where users can input:
+Area (in sq ft)
+Number of Bedrooms
+Number of Bathrooms
+Submits the form to /predict route to get the predicted price.
 
 
 
